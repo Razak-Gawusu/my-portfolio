@@ -1,10 +1,13 @@
 import React from 'react'
 import LatestWorks from '../components/LatestWorks'
 import { latestWorksData } from '../Data/data'
+import {useTheme} from '../contexts/ThemeProvider'
 
 function Projects() {
+    const theme = useTheme()
+    
   return (
-    <div className='projects'>
+    <div className={`projects ${theme ? 'dark' : ''}`}>
         <div className='container'>
             <h3 className='mainTitle'>Latest Works</h3>
             <p className='paragraph'>Perfect solutions for digital experience</p>

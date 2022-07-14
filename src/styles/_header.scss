@@ -16,9 +16,20 @@
             }
         }
 
+        div:last-child{
+            @include flexdiv(row, flex-start, center, 2rem);
+        }
+
+        .mobile__toggleTheme{
+            display: none;
+            font-size: 1.75rem;
+            color: $lightModeText;
+            padding-top: .5rem;
+        }
+
         .icon.menu{
             font-size: 3rem;
-            color: $lightModeTextAlt;
+            color: $lightModeText;
         }
 
         .mobile__view--nav{

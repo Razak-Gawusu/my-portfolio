@@ -1,9 +1,11 @@
 import React from 'react'
 import NavBar from '../components/NavBar'
+import {useTheme} from '../contexts/ThemeProvider'
 
 function Contact() {
+  const theme = useTheme()
   return (
-    <div className='contact'>
+    <div className={`contact ${theme ? 'dark' : ''}`}>
         <div className="container">
             <div className='contact__sayhi'>
                 <h3 className='heading'>Let's make something amazing together</h3>

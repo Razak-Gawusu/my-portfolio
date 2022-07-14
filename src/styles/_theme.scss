@@ -1,0 +1,151 @@
+.header.dark{
+    background-color: $darkModeBackgroundAlt;
+
+    .container{
+        .heading{
+            color: $darkModeText;
+        }
+
+        .mobile__toggleTheme{
+            color: $darkModeText;
+        }
+
+        .nav{
+            &__list{
+                li{
+                    color: $darkModeText;
+                    &:hover{
+                        color: $accentColor1;
+                    }
+                }
+            }
+        }
+
+        .socials{
+            &__item{
+                color: $darkModeText;
+            }
+        }
+
+        .icon.menu{
+            color: $darkModeText;
+        }
+    }
+}
+
+
+.hero.dark{
+    background-color: $darkModeBackgroundAlt;
+
+    .mainTitle{
+        color: $darkModeText;
+    }
+
+    .paragraph{
+        color: $darkModeTextAlt;
+    }
+
+    .link{
+        &:hover{
+            color: $darkModeText;
+        }
+    }
+}
+
+.aboutMe.dark{
+    background-color: $darkModeBackground;
+    .subTitle, .paragraph{
+        color: $darkModeTextAlt;
+    }
+
+    .mainTitle{
+        color: $darkModeText;
+    }
+
+    .aboutMe__item:last-child{
+        .skills--item{
+            background-color: $darkModeBackgroundAlt;
+
+            &__text{
+                .paragraph{
+                    color: $darkModeTextAlt;
+                }
+            }
+
+            .link{
+                color: $darkModeText;
+            }
+        }
+    }
+}
+
+.projects.dark{
+    background-color: $darkModeBackground;
+    .mainTitle{
+        color: $darkModeText;
+    }
+
+    .paragraph{
+        color: $darkModeTextAlt;
+    }
+
+    .projects__works--item{
+        background-color: $darkModeBackgroundAlt;
+
+        &__text{
+            .heading{
+                color: $darkModeText;
+            }
+        }
+    }
+}
+
+.contact.dark{
+    background-color: $darkModeBackgroundAlt;
+
+    .contact__sayhi{
+        .heading{
+            color: $darkModeText;
+        }
+    }
+
+    .contact__information{
+        .heading:first-child{
+            color: $darkModeTextAlt;
+        }
+
+        .paragraph{
+            color: $darkModeTextAlt;
+        }
+
+        .heading:last-child{
+            color: $darkModeText;
+        }
+
+        .nav{
+            &__list{
+                .nav__item{
+                    color: $darkModeText;
+                    &:hover{
+                        color: $accentColor1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer.dark{
+    background-color: $darkModeBackground;
+    .paragraph{
+        color: $darkModeText;
+
+        span{
+            color: $accentColor1;
+        }
+    }
+
+    small{
+        color: $darkModeTextAlt;
+    }
+}

@@ -157,6 +157,9 @@ img {
   .hero {
     padding-top: 10rem;
   }
+  .header .container .mobile__toggleTheme {
+    display: block !important;
+  }
   .header .container .nav {
     display: none;
   }
@@ -171,6 +174,9 @@ img {
   .hero {
     padding-top: 10rem;
   }
+  .header .container .mobile__toggleTheme {
+    display: block !important;
+  }
   .header .container .nav {
     display: none;
   }
@@ -182,6 +188,9 @@ img {
   }
 }
 @media screen and (min-width: 900px) {
+  .header .container .mobile__toggleTheme {
+    display: none !important;
+  }
   .header .container .nav {
     display: block;
   }
@@ -278,6 +287,11 @@ img {
   }
   .aboutMe .container .aboutMe__item:last-child {
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    gap: 4rem;
   }
   .projects .projects__works {
     grid-template-columns: repeat(2, 1fr);
@@ -464,7 +478,7 @@ img {
 }
 .contact__sayhi .heading .link {
   text-transform: lowercase;
-  font-size: 2rem;
+  font-size: 2.75rem;
 }
 .contact__sayhi .heading:last-child {
   margin-top: 2rem;
@@ -488,6 +502,7 @@ img {
 }
 .contact__information .nav__list .nav__item {
   margin-top: 1rem;
+  font-size: 1.75rem;
 }
 .contact__information .nav__list .nav__item:hover {
   color: #582ca8;
@@ -540,9 +555,22 @@ img {
   font-weight: 600;
   color: #582ca8;
 }
+.header .container div:last-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+.header .container .mobile__toggleTheme {
+  display: none;
+  font-size: 1.75rem;
+  color: #000000;
+  padding-top: 0.5rem;
+}
 .header .container .icon.menu {
   font-size: 3rem;
-  color: #3f3f3f;
+  color: #000000;
 }
 .header .container .mobile__view--nav {
   position: absolute;
@@ -595,6 +623,111 @@ img {
 .header .container .mobile__view--nav ul:last-child .socials__item:last-child .icon {
   margin: 0;
   font-size: 1.75rem;
+}
+
+.header.dark {
+  background-color: #1d1d1d;
+}
+.header.dark .container .heading {
+  color: #ffffff;
+}
+.header.dark .container .mobile__toggleTheme {
+  color: #ffffff;
+}
+.header.dark .container .nav__list li {
+  color: #ffffff;
+}
+.header.dark .container .nav__list li:hover {
+  color: #582ca8;
+}
+.header.dark .container .socials__item {
+  color: #ffffff;
+}
+.header.dark .container .icon.menu {
+  color: #ffffff;
+}
+
+.hero.dark {
+  background-color: #1d1d1d;
+}
+.hero.dark .mainTitle {
+  color: #ffffff;
+}
+.hero.dark .paragraph {
+  color: #cccccc;
+}
+.hero.dark .link:hover {
+  color: #ffffff;
+}
+
+.aboutMe.dark {
+  background-color: #141416;
+}
+.aboutMe.dark .subTitle, .aboutMe.dark .paragraph {
+  color: #cccccc;
+}
+.aboutMe.dark .mainTitle {
+  color: #ffffff;
+}
+.aboutMe.dark .aboutMe__item:last-child .skills--item {
+  background-color: #1d1d1d;
+}
+.aboutMe.dark .aboutMe__item:last-child .skills--item__text .paragraph {
+  color: #cccccc;
+}
+.aboutMe.dark .aboutMe__item:last-child .skills--item .link {
+  color: #ffffff;
+}
+
+.projects.dark {
+  background-color: #141416;
+}
+.projects.dark .mainTitle {
+  color: #ffffff;
+}
+.projects.dark .paragraph {
+  color: #cccccc;
+}
+.projects.dark .projects__works--item {
+  background-color: #1d1d1d;
+}
+.projects.dark .projects__works--item__text .heading {
+  color: #ffffff;
+}
+
+.contact.dark {
+  background-color: #1d1d1d;
+}
+.contact.dark .contact__sayhi .heading {
+  color: #ffffff;
+}
+.contact.dark .contact__information .heading:first-child {
+  color: #cccccc;
+}
+.contact.dark .contact__information .paragraph {
+  color: #cccccc;
+}
+.contact.dark .contact__information .heading:last-child {
+  color: #ffffff;
+}
+.contact.dark .contact__information .nav__list .nav__item {
+  color: #ffffff;
+}
+.contact.dark .contact__information .nav__list .nav__item:hover {
+  color: #582ca8;
+}
+
+.footer.dark {
+  background-color: #141416;
+}
+.footer.dark .paragraph {
+  color: #ffffff;
+}
+.footer.dark .paragraph span {
+  color: #582ca8;
+}
+.footer.dark small {
+  color: #cccccc;
 }
 
 .App {

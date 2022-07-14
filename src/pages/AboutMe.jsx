@@ -1,10 +1,12 @@
 import React from 'react'
 import { skillData } from '../Data/data'
 import Skill from '../components/Skill'
+import {useTheme} from '../contexts/ThemeProvider'
 
 function AboutMe() {
+    const theme = useTheme()
   return (
-    <div className='aboutMe'>
+    <div className={`aboutMe ${theme ? 'dark' : ''}`}>
         <div className="container">            
             <div className='aboutMe__item'>
                 <h6 className='paragraph'>Introduce</h6>

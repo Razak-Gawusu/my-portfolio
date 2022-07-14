@@ -2,17 +2,21 @@ import React from 'react'
 import NavBar from '../NavBar'
 import { FaTwitter, FaGithub, FaEnvelopeOpen, FaBars, FaTimes, FaMoon, FaSun } from "react-icons/fa";
 import {openNav, closeNav} from './app'
+import {useTheme, useUpdateTheme} from '../../contexts/ThemeProvider'
 
-function Header(props) {
+function Header() {
+  const theme = useTheme()
+  const toggleTheme = useUpdateTheme()
+
   let themeIcon 
-  if (props.theme === true) {
+  if (theme === true) {
     themeIcon = <FaMoon className='icon' />
   } else {
     themeIcon = <FaSun className='icon'/>
   }
   
   return (
-    <header className='header'>
+    <header className={`header ${theme ? 'dark' : ''}`}>
       <div className="container">
         <h1 className='heading'>
           <span>Gawusu</span> Razak
@@ -22,7 +26,7 @@ function Header(props) {
           <div className="socials__item"><FaGithub className='icon'/> Github </div> 
           <div className="socials__item"><FaTwitter className='icon'/> Twitter </div>
           <div className="socials__item"><FaEnvelopeOpen className='icon'/></div>
-          <div className="socials__item" onClick={() => props.toggleTheme()}>{themeIcon}</div>
+          <div className="socials__item" onClick={() =>toggleTheme()}>{themeIcon}</div>
         </div>
 
         <nav className='mobile__view--nav'>
@@ -39,8 +43,10 @@ function Header(props) {
             <li className="socials__item"><FaEnvelopeOpen className='icon'/></li>
           </ul>
         </nav>
-
-        <FaBars className='icon menu' onClick={() => openNav()} />
+        <div>
+          <div className="mobile__toggleTheme" onClick={() =>toggleTheme()}>{themeIcon}</div>
+          <FaBars className='icon menu' onClick={() => openNav()} />
+        </div>
       </div>
     </header>
   )

@@ -1,8 +1,11 @@
 import React from 'react'
+import {useTheme} from '../../contexts/ThemeProvider'
 
 function Hero() {
+    const theme = useTheme();
+    
   return (
-    <div className='hero'>
+    <div className={`hero ${theme ? 'dark' : ''}`}>
         <div className='container'>
             <div className='hero__text'>
                 <button className='btn'>Full-Stack Developer</button>
