@@ -7,15 +7,15 @@ function LatestWorks(props) {
 
   return (
     <>
-        <div className='latest__works--item'>
-            <div className='latest__works--item__text'>
+        <div className='projects__works--item'>
+            <div className='projects__works--item__text'>
                 <h4 className='heading'>{props.title}</h4>
                 <div className='langUsed'>
                   {langArrElement}
                 </div> 
             </div>
 
-            <div className='latest__works--item__image'>
+            <div className='projects__works--item__image'>
                 <img 
                   src={`./images/latest-works/${props.image}`}
                   alt="projectImage" 

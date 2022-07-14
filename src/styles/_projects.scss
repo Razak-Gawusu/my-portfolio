@@ -1,0 +1,60 @@
+@import 'variables';
+
+.projects{
+//     text-align: center;
+    padding: 4rem 0;
+    .mainTitle{
+        padding: 0;
+        text-align: center;
+    }
+    .paragraph{
+        text-align: center;
+    }
+
+    .link{
+        text-align: center;
+        display: block;
+        padding: 4rem 0;
+        font-size: 2.75rem;
+    }
+
+    .projects__works{
+        display: grid;
+    }
+
+    .projects__works--item{
+        background-color: $lightModeBackgroundAlt;
+        margin: 2rem 0;
+        padding: 2rem;
+        border-radius: .5rem;
+        &__text{
+            @include flexdiv(row, space-between);
+            .heading{
+                font-size: 2rem;
+                font-weight: weight(bold);
+            }
+
+            .langUsed{
+                button{
+                    border: none;
+                    background-color: $accentColor1;
+                    padding: .25rem .5rem;
+                    border-radius: .25rem;
+                    color: $darkModeText;
+                    font-family: 'Source Sans Pro', sans-serif;
+                }
+                button + button{
+                    margin-left: 1rem;
+                }
+            }
+            
+        }
+
+        &__image{
+            margin-top: 2rem;
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+}

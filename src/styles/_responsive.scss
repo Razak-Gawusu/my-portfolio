@@ -1,137 +1,61 @@
 @import 'config';
-@import 'flexContainers';
 
-@include media-sm{
-    .header--wrapper{
-        
-        .header{
-            overflow: hidden;
-            .nav--wrapper{
-                height: 100%; 
-                width: 0; 
-                position: fixed; 
-                z-index: 1; 
-                top: 0;
-                right: 0;
-                background-color: #111; 
-                overflow-x: hidden; 
-                transition: 0.5s;
+@include media-lg{
+    .hero{
+        position: relative;
+        text-align: left;
+        display: grid;
+        place-items: center;
+        .container{
+            @include flexdiv(row, space-between, flex-start);
 
-                &__container{
-                    transform: translateY(100%);
-                    transition: all .07s ease-out;
-                }
-
-                .closeNav{
-                    display: block;
-                    position: absolute;
-                    left: 4.5rem;
-                    top: 3rem;
-                    font-size: 2.5rem;
-                    &:hover{
-                        color: $accentColor1;
-                    }
-                }
-                .nav{
-                    
-                    margin-bottom: 2rem;
-                    .nav__list{
-                        @include flexdiv(column, center, center, 2rem);
-                    }
-
-                    .nav__item{
-                        font-size: 1.75rem;
-                    }
-                }
-
-                .socials{
-                    @include flexdiv(column, center, center, 2rem)
-                }
+            .hero__text, .hero__image{
+                width: 50%
             }
 
-            &__nav--hamburger{
-                display: block;
-                &:hover{
-                    color: $accentColor1;
-                }
+            .hero__text{
+                padding-left: 10rem;
+            }
+
+            .hero__image{
+                position: absolute;
+                bottom: 0;
+                right: -10rem;
+            }
+        }
+    }
+
+    .aboutMe{
+        display: grid;
+        place-items: center;
+        .container{
+            @include flexdiv(row-reverse, space-between);
+
+            .aboutMe__item{
+                width: 47.5%;
+
+            }
+
+            .aboutMe__item:last-child{
+                padding: 0;
+            }
+        }
+    }
+
+    .projects{
+        .projects__works{
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4rem;
+        }
+    }
+
+    .contact{
+        .container{
+            @include flexdiv(row, space-between);
+
+            .contact__sayhi{
+                width: 35%;
             }
         }
     }
 }
-
-
-@include media-md{
-    .hero--wrapper{
-        
-        .hero{
-            @include flexdiv(row, space-between, center);
-
-            &__text{
-                @include flexdiv(column, flex-start, flex-start);
-                width: 55%
-            }
-
-            &__image{
-                width: 45%
-                img{
-                    width: 100%
-                }
-            }
-        }
-    }
-
-    .work--wrapper{
-        .work{
-            @include flexdiv(row-reverse, space-between, flex-start, 4rem);
-
-            &__intro{
-                min-width: 45%;
-            }
-
-            &__skills{
-                min-width: 45%;
-            }
-        }
-
-        .latest__works{
-            &--cards{
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 4rem;
-            }
-        }
-    }
-
-    .footer--wrapper{
-        padding-top: 4rem;
-        .footer{
-            &__item--primary{
-                @include flexdiv(row, space-between, flex-start);
-
-                .sayhi{
-                    @include flexdiv(column, flex-start, flex-start);
-                    h3{
-                        margin: 0
-                    }
-                }
-
-                .information{
-                    @include flexdiv(column, flex-start, flex-start);
-
-                    .address{
-                        @include flexdiv(column, flex-start, flex-start)
-                    }
-
-                    .nav{
-                        margin: 0 0 2rem 0;
-                        .nav__list{
-                            @include flexdiv(column, flex-start, flex-start);
-                        }
-                    }
-                }
-            }
-
-        }
-    }
-}
-

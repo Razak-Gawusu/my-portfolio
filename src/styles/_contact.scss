@@ -1,0 +1,56 @@
+@import 'variables';
+
+.contact{
+    background-color: $lightModeBackgroundAlt;
+    padding: 5rem 0;
+
+    &__sayhi{
+        padding-bottom: 2.5rem;
+        .heading{
+            font-size: 2.75rem;
+            
+            .link{
+                text-transform: lowercase;
+                font-size: 2rem;
+            }
+        }
+    
+        .heading:last-child{
+            margin-top: 2rem;
+        }
+    }
+
+    &__information{
+        .paragraph, .mainTitle{
+            padding: 0;
+        }
+        .heading:first-child{
+            padding-bottom: 1rem;
+            color: $lightModeTextAlt;
+
+        }
+
+        .paragraph{
+            color: $lightModeTextAlt;
+        }
+
+        .heading:last-child{
+            font-size: 2.25rem;
+            font-weight: weight(bold);
+        }
+
+        .nav{
+            padding: 2rem 0;
+            &__list{
+                .nav__item{
+                    margin-top: 1rem;
+
+                    &:hover{
+                        color: $accentColor1;
+                    }
+                }
+            }
+        }
+
+    }
+}

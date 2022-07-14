@@ -1,7 +1,7 @@
 import React from 'react'
 import Skill from '../../components/Skill'
 import LatestWorks from '../../components/LatestWorks'
-import { skillData, latestWorksData } from '../../Data/skillData'
+import { skillData, latestWorksData } from '../../Data/data'
 
 function Work() {
     const [skills, setSkills] = React.useState(skillData)

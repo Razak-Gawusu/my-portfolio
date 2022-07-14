@@ -12,15 +12,15 @@ function Skill(props) {
   }
 
   return (
-    <div className='work__skills--item'>
-      <div className='work__skills--item__text'>
+    <div className='skills--item'>
+      <div className='skills--item__text'>
         <h4 className='heading'>{props.name}</h4>
-        <p>{props.description}</p>
-        <h6>{props.number} projects</h6>
+        <p className='paragraph'>{props.description}</p>
+        <h6 className='link'>{props.number} projects</h6>
       </div>
             
-      <div className='work__skills--item__image'>
-        <h6>{image}</h6>
+      <div className='skills--item__image'>
+        {image}
       </div>
     </div>
   )

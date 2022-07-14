@@ -1,0 +1,60 @@
+@import 'variables';
+@import 'styles';
+
+.aboutMe{
+    height: 100vh;
+    padding: 4rem 0;
+    .subTitle{
+        padding-bottom: 2rem;
+    }
+    .paragraph{
+        color: $lightModeTextAlt;
+        text-align: justify;
+        padding: 0;
+    }
+
+    &__item:last-child{
+        padding: 5rem 0;
+        width: 100%;
+        .skills--item{
+            @include flexdiv(row, space-between);
+            background-color: $lightModeBackgroundAlt;
+            margin: 2.5rem 0;
+            padding: 2.5rem;
+            border-radius: .5rem;
+
+            &__text{
+                .heading{
+                    color: $accentColor1;
+                    font-size: 2.5rem;
+                }
+
+                .paragraph{
+                    color: $lightModeTextAlt;
+                    padding-bottom: 2rem;
+                }
+
+                .link{
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    font-size: 1.25rem;
+                    color: $lightModeText;
+                    font-family: 'Source Sans Pro', sans-serif;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            &__image{
+                align-self: flex-start;
+                color: $accentColor1;
+                font-size: 2rem;
+            }
+        }
+    }
+   
+}
+
+
+
