@@ -1,7 +1,7 @@
 export function openNav() {
-    document.querySelector(".nav--wrapper").style.width = "250px";    
+    document.querySelector(".mobile__view--nav").style.width = '100vw';    
 }
 
 export function closeNav(){
-    document.querySelector(".nav--wrapper").style.width = "0";
+    document.querySelector(".mobile__view--nav").style.width = '0';
 }

@@ -135,9 +135,10 @@ img {
 }
 
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   padding: 5rem 0;
   text-align: center;
+  background-color: #eeeeee;
 }
 .hero .paragraph {
   padding: 2rem 0;
@@ -152,7 +153,91 @@ img {
   font-size: 2rem;
 }
 
+@media screen and (max-width: 600px) {
+  .hero {
+    padding-top: 10rem;
+  }
+  .header .container .nav {
+    display: none;
+  }
+  .header .container .socials {
+    display: none;
+  }
+  .header .container .icon.menu {
+    display: block;
+  }
+}
+@media screen and (min-width: 605px) {
+  .hero {
+    padding-top: 10rem;
+  }
+  .header .container .nav {
+    display: none;
+  }
+  .header .container .socials {
+    display: none;
+  }
+  .header .container .icon.menu {
+    display: block;
+  }
+}
 @media screen and (min-width: 900px) {
+  .header .container .nav {
+    display: block;
+  }
+  .header .container .nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .header .container .nav__list li {
+    font-size: 1.75rem;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+  }
+  .header .container .nav__list li:hover {
+    color: #582ca8;
+  }
+  .header .container .socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+  }
+  .header .container .socials__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.125rem;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+  .header .container .socials__item:nth-child(3) {
+    background-color: #eeeeee;
+    padding: 1rem;
+    border-radius: 50%;
+  }
+  .header .container .socials__item:nth-child(3) .icon {
+    color: #582ca8;
+  }
+  .header .container .socials__item:last-child {
+    border-left: solid 2px #582ca8;
+    padding-left: 1.5rem;
+    margin-left: 2.5rem;
+  }
+  .header .container .socials__item:last-child .icon {
+    font-size: 2rem;
+  }
+  .header .container .icon {
+    font-size: 1.25rem;
+  }
+  .header .container .icon.menu {
+    display: none;
+  }
   .hero {
     position: relative;
     text-align: left;
@@ -263,7 +348,7 @@ img {
 
 .aboutMe {
   height: 100vh;
-  padding: 4rem 0;
+  padding: 5rem 0;
 }
 .aboutMe .subTitle {
   padding-bottom: 2rem;
@@ -295,6 +380,7 @@ img {
 .aboutMe__item:last-child .skills--item__text .paragraph {
   color: #3f3f3f;
   padding-bottom: 2rem;
+  font-size: 1.5rem;
 }
 .aboutMe__item:last-child .skills--item__text .link {
   text-transform: uppercase;
@@ -431,4 +517,86 @@ img {
 }
 .footer .container small {
   font-size: 1.25rem;
+}
+
+.header {
+  background-color: #ffffff;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+.header .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  padding: 2rem 0;
+}
+.header .container .heading {
+  font-size: 2.5rem;
+}
+.header .container .heading span {
+  font-weight: 600;
+  color: #582ca8;
+}
+.header .container .icon.menu {
+  font-size: 3rem;
+  color: #3f3f3f;
+}
+.header .container .mobile__view--nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  overflow: hidden;
+  background-color: #1d1d1d;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  transition: all 0.4s ease-in-out;
+}
+.header .container .mobile__view--nav .icon.close {
+  font-size: 2.5rem;
+  color: #ffffff;
+  position: absolute;
+  top: 2.5rem;
+  left: 2.5rem;
+}
+.header .container .mobile__view--nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.header .container .mobile__view--nav ul li {
+  font-size: 2rem;
+  color: #ffffff;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.header .container .mobile__view--nav ul li:hover {
+  color: #582ca8;
+}
+.header .container .mobile__view--nav ul:last-child .socials__item .icon {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+.header .container .mobile__view--nav ul:last-child .socials__item:last-child {
+  align-self: center;
+  padding: 1.75rem;
+  background-color: #141416;
+  border-radius: 50%;
+}
+.header .container .mobile__view--nav ul:last-child .socials__item:last-child .icon {
+  margin: 0;
+  font-size: 1.75rem;
+}
+
+.App {
+  overflow: hidden;
 }/*# sourceMappingURL=main.css.map */

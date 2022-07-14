@@ -1,34 +1,48 @@
 import React from 'react'
 import NavBar from '../NavBar'
-import { FaTwitter, FaGithub, FaEnvelopeOpen, FaBars, FaTimes } from "react-icons/fa";
+import { FaTwitter, FaGithub, FaEnvelopeOpen, FaBars, FaTimes, FaMoon, FaSun } from "react-icons/fa";
 import {openNav, closeNav} from './app'
 
-function Header() {
+function Header(props) {
+  let themeIcon 
+  if (props.theme === true) {
+    themeIcon = <FaMoon className='icon' />
+  } else {
+    themeIcon = <FaSun className='icon'/>
+  }
   
   return (
-    <>
-      <div className='header--wrapper'>
-        <div className="container">
-          <div className='header'>
-            <div className='logo'><span>Gawusu</span> Razak</div>
-            <div className='nav--wrapper'>
-              <div className='nav--wrapper__container'>
-                <NavBar />
-                <div className='socials'>
-                  <div><FaTwitter className='socials__icon'/> twitter</div>
-                  <div><FaGithub className='socials__icon'/> github</div>
-                  <div className='socials__icon--mail' ><FaEnvelopeOpen className='socials__mail' /></div>
-                </div>
-              </div>
-              <FaTimes  className='closeNav' onClick={closeNav}/>
-            </div>
-            <div className='header__nav--hamburger' onClick={openNav}>
-              <FaBars />
-            </div>
-          </div>
+    <header className='header'>
+      <div className="container">
+        <h1 className='heading'>
+          <span>Gawusu</span> Razak
+        </h1>
+        <NavBar />
+        <div className='socials'>
+          <div className="socials__item"><FaGithub className='icon'/> Github </div> 
+          <div className="socials__item"><FaTwitter className='icon'/> Twitter </div>
+          <div className="socials__item"><FaEnvelopeOpen className='icon'/></div>
+          <div className="socials__item" onClick={() => props.toggleTheme()}>{themeIcon}</div>
         </div>
+
+        <nav className='mobile__view--nav'>
+          <FaTimes className='icon close' onClick={() => closeNav()}/>
+          <ul>
+            <li>Home</li>
+            <li>About Me</li>
+            <li>Projects</li>
+            <li>Contact</li>
+          </ul>
+          <ul>
+            <li className="socials__item"><FaGithub className='icon'/> Github </li> 
+            <li className="socials__item"><FaTwitter className='icon'/> Twitter </li>
+            <li className="socials__item"><FaEnvelopeOpen className='icon'/></li>
+          </ul>
+        </nav>
+
+        <FaBars className='icon menu' onClick={() => openNav()} />
       </div>
-    </>
+    </header>
   )
 }
 

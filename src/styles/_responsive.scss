@@ -1,6 +1,112 @@
 @import 'config';
 
+@include media-sm{
+    .hero{
+        padding-top: 10rem;
+    }
+
+    .header{
+        .container{
+            .nav{
+                display: none;
+            }
+
+            .socials{
+                display: none;
+            }
+
+            .icon.menu{
+                display: block;
+            }
+        }
+    }
+}
+
+@include media-md{
+    .hero{
+        padding-top: 10rem;
+    }
+
+    .header{
+        .container{
+            .nav{
+                display: none;
+            }
+
+            .socials{
+                display: none;
+            }
+
+            .icon.menu{
+                display: block;
+            }
+        }
+    }
+}
+
+
 @include media-lg{
+
+    .header{
+        .container{
+
+            .nav{
+                display: block;
+                &__list{
+                    @include flexdiv(row, flex-start, center, 1.5rem);
+    
+                    li{
+                        font-size: 1.75rem;
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-weight: weight(bold);
+    
+                        &:hover{
+                            color: $accentColor1;
+                        }
+                    }
+                }
+            }
+            .socials{
+                @include flexdiv(row, flex-start, center, 2rem);
+            }
+    
+            .socials__item{
+                @include flexdiv(row, flex-start, center, 1rem);
+                font-size: 1.125rem;
+                font-family: 'Source Sans Pro', sans-serif;
+            }
+    
+            .socials__item:nth-child(3){
+                background-color: $lightModeBackgroundAlt;
+                padding: 1rem;
+                border-radius: 50%;
+    
+                .icon{
+                    color: $accentColor1;
+                }
+            }
+    
+            .socials__item:last-child{
+                border-left: solid 2px $accentColor1;
+                padding-left: 1.5rem;
+                margin-left: 2.5rem;
+                
+                .icon{
+                    font-size: 2rem;
+                }
+            }
+    
+            .icon{
+                font-size: 1.25rem;
+            }
+    
+            .icon.menu{
+                display: none;
+            }
+        }
+    }
+
+
     .hero{
         position: relative;
         text-align: left;
