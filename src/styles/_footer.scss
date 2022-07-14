@@ -1,0 +1,83 @@
+@import 'variables';
+
+.footer--wrapper{
+    background-color: $darkModeBackground;
+
+    .footer{
+        font-family: 'Source Sans Pro', sans-serif;
+        text-align: center;
+        color: $darkModeText;
+        &__item{
+
+
+        }
+
+        &__item--primary{
+            @include flexdiv(column);
+            h3{
+                font-size: 1.75rem;
+                margin: 2rem 0;
+                font-family: 'IBM Plex Mono', monospace;
+                span{
+                    color: $accentColor1;
+                    text-decoration: underline;
+                }
+            }
+
+            .information{
+                font-size: 1.5rem;
+                h6{
+                    color: $darkModeTextAlt;
+                    margin-bottom: 1rem;
+                }
+
+                h5{
+                    color: $darkModeTextAlt
+                }
+
+                h4{
+                    font-family: 'IBM Plex Mono', monospace;
+                    font-size: 1.75rem;
+                }
+            }
+
+            .nav{
+                margin: 2rem 0;
+                .nav__list{
+                    @include flexdiv(column);
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+
+                    .nav__item{
+                        &:hover{
+                            color: $accentColor1
+                        }        
+                    }
+                }
+            }
+        }
+
+        &__item--secondary{
+            @include flexdiv();
+            
+            .logo{
+                @include flexdiv();
+                font-size: 1.5rem;
+                
+                .copyright{
+                    font-size: 1rem;
+                    color: $darkModeTextAlt;
+                }
+            }
+
+            ul{
+                @include flexdiv();
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+            }
+        }
+    }
+}

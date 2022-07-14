@@ -1,0 +1,52 @@
+@import 'flexContainers';
+
+.hero--wrapper{
+    background-color: $darkModeBackgroundAlt;
+    
+    .hero{
+        padding: 4rem 0;
+        &__text{
+            @include flexdiv(column, center, center);
+            color: $darkModeText;
+            &--title{
+                border: none;
+                background-color: $accentColor1;
+                color: $darkModeText;
+                font-size: 1.5rem;
+                padding: .5em .75em;
+                border-radius: .25em;
+                margin-bottom: 4rem;
+                font-family: 'Source Sans Pro', sans-serif;
+            }
+
+            &--primary{
+                font-size: 4rem;
+                font-family: 'IBM Plex Mono', monospace;
+                font-weight: weight(medium);
+            }
+
+            &--secondary{
+                font-size: 1.5rem;
+                color: $darkModeTextAlt;
+                margin-bottom: 4rem;
+                font-family: 'Source Sans Pro', sans-serif;
+            }
+
+            .hero__link{
+                font-size: 1.75rem;
+                text-decoration: underline;
+                color: $accentColor1;
+                text-transform: uppercase;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: weight(bold);
+            }
+        }
+
+        .hero__image{
+            margin: 4rem 0;
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+}

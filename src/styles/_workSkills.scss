@@ -1,0 +1,148 @@
+@import 'variables';
+
+.work--wrapper{
+    background-color: $darkModeBackground;
+
+    .work{
+        height: 100vh;
+        @include flexdiv(column-reverse);
+        color: $darkModeText;
+        font-size: 1.5rem;
+        padding: 4rem 0;
+        height: 100vh;
+
+        &__intro{
+            text-align: center;
+            margin: 4rem 0;
+            h6{
+                color: $darkModeTextAlt;
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: weight(regular);
+            }
+
+            h3{
+                font-size: 3rem;
+                margin-bottom: 1rem;
+                font-family: 'IBM Plex Mono', monospace;
+                font-weight: weight(regular);
+            }
+            h4{
+                font-style: italic;
+                font-size: 1.75rem;
+                margin-bottom: .75rem;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: weight(regular);
+                margin: 2.5rem 0;
+            }
+            p{
+                color: $darkModeTextAlt;
+                text-align: left;
+                font-family: 'Source Sans Pro', sans-serif;
+                line-height: 2.75rem;
+                font-weight: weight(regular);
+            }
+        }
+
+        .work__skills{
+            width: 100%;
+            &--item{
+                @include flexdiv;
+                background-color: $darkModeBackgroundAlt;
+                margin: 2.5rem 0;
+                padding: 2.5rem;
+                border-radius: .5rem;
+
+                &__text{
+                    h4{
+                        color: $accentColor1;
+                        font-size: 2.5rem;
+                        font-weight: weight(bold);
+                    }
+                    p{
+                        color: $darkModeTextAlt;
+                        margin-bottom: 2rem;
+                        font-family: 'Source Sans Pro', sans-serif;
+                    }
+                    h6{
+                        text-transform: uppercase;
+                        font-family: 'Source Sans Pro', sans-serif;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+                &__image{
+                    align-self: flex-start;
+                    color: $accentColor1;
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+
+    .latest__works{
+        text-align: center;
+        padding: 4rem 0;
+        h3{
+            color: $darkModeText;
+            font-size: 2.5rem;
+            font-weight: weight(regular);
+        }
+
+        p{
+            color: $darkModeTextAlt;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 1.5rem;
+        }
+
+        a{
+            font-size: 1.7rem;
+            color: $accentColor1;
+            text-transform: uppercase;
+            text-decoration: underline;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: weight(bold);
+        }
+
+        &--item{
+            background-color: $darkModeBackgroundAlt;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: .5rem;
+            &__text{
+                @include flexdiv;
+                h4{
+                    font-size: 2rem;
+                    color: $darkModeText;
+                    text-transform: capitalize;
+                    font-weight: weight(regular);
+                }
+
+                .langUsed{
+                    button{
+                        border: none;
+                        background-color: $accentColor1;
+                        padding: .25rem .5rem;
+                        border-radius: .25rem;
+                        color: $darkModeText;
+                        font-family: 'Source Sans Pro', sans-serif;
+                    }
+                    button + button{
+                        margin-left: 1rem;
+                    }
+                }
+                
+            }
+
+            &__image{
+                margin-top: 2rem;
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
