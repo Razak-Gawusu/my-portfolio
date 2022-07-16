@@ -1,5 +1,5 @@
 .header{
-    background-color: $lightModeBackground;
+    background-color: $lightModeBackgroundAlt;
     position: absolute;
     z-index: 1;
     width: 100%;
@@ -16,20 +16,19 @@
             }
         }
 
-        div:last-child{
-            @include flexdiv(row, flex-start, center, 2rem);
-        }
-
         .mobile__toggleTheme{
             display: none;
-            font-size: 1.75rem;
-            color: $lightModeText;
-            padding-top: .5rem;
-        }
 
-        .icon.menu{
-            font-size: 3rem;
-            color: $lightModeText;
+            &--icon{
+                font-size: 1.5rem;
+                color: $lightModeText;
+                padding-top: .5rem;
+            }
+
+            .icon.menu{
+                font-size: 2rem;
+                color: $lightModeText;
+            }
         }
 
         .mobile__view--nav{
@@ -55,22 +54,26 @@
 
             ul{
                 @include flexdiv(column, flex-start, flex-start, 2rem);
+
                 li{
-                    font-size: 2rem;
-                    color: $darkModeText;
-                    font-family: 'Source Sans Pro', sans-serif;
-                    &:hover{
-                        color: $accentColor1;
+                    .navLink{
+                        color: $darkModeText;
+                        font-size: 2rem;
+                        text-transform: capitalize;
+                        &:hover{
+                            color: $accentColor1;
+                        }
                     }
                 }
             }
             
             ul:last-child{
                 .socials__item{
-
-                    .icon{
-                        font-size: 1.2rem;
-                        margin-right: 1rem;
+                    @include flexdiv(row, center, center, .75rem);
+                    font-size: 1.75rem;
+                    color: $darkModeText;
+                    &:hover{
+                        color: $accentColor1;
                     }
                 }
 
@@ -78,6 +81,7 @@
                     .icon{
                         margin: 0;
                         font-size: 1.75rem;
+                        color: $accentColor1;
                     }
                     align-self: center;
                     padding: 1.75rem;

@@ -6,7 +6,7 @@ import {useTheme} from '../contexts/ThemeProvider'
 function AboutMe() {
     const theme = useTheme()
   return (
-    <div className={`aboutMe ${theme ? 'dark' : ''}`}>
+    <div id='aboutMe' className={`aboutMe ${theme ? 'dark' : ''}`}>
         <div className="container">            
             <div className='aboutMe__item'>
                 <h6 className='paragraph'>Introduce</h6>

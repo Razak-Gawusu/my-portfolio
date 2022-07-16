@@ -4,10 +4,7 @@ import LatestWorks from '../../components/LatestWorks'
 import { skillData, latestWorksData } from '../../Data/data'
 
 function Work() {
-    const [skills, setSkills] = React.useState(skillData)
-    const [latestWorks, setLatesWorks] = React.useState(latestWorksData)
-
-    const skillsElement = skills.map(skill => {
+    const skillsElement = skillData.map(skill => {
         return(
             <Skill 
                 key={skill.id} 
@@ -18,7 +15,7 @@ function Work() {
         )
     })
 
-    const latestWorksElement = latestWorks.map(work => {
+    const latestWorksElement = latestWorksData.map(work => {
         return(
             <LatestWorks
                 key={work.id}

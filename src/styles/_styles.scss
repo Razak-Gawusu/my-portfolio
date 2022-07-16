@@ -59,3 +59,32 @@
     margin-bottom: 4rem;
     font-family: 'Source Sans Pro', sans-serif
 }
+
+
+.header.sticky{
+    position: fixed;
+    z-index: 2;
+}
+
+.navLink{
+    text-decoration: none;
+    color: $lightModeText;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: weight(regular);
+
+    &:hover{
+        color: $accentColor1;
+    }
+}
+
+@keyframes scaleCard {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

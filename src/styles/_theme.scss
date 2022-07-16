@@ -7,15 +7,24 @@
         }
 
         .mobile__toggleTheme{
-            color: $darkModeText;
+
+            &--icon{
+                color: $darkModeText;
+            }
+
+            .icon.menu{
+                color: $darkModeText;
+            }
         }
 
         .nav{
             &__list{
                 li{
-                    color: $darkModeText;
-                    &:hover{
-                        color: $accentColor1;
+                    .navLink{
+                        color: $darkModeText;
+                        &:hover{
+                            color: $accentColor1;
+                        }
                     }
                 }
             }

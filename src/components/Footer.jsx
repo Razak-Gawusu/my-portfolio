@@ -1,7 +1,5 @@
 import React from 'react'
-import {useTheme} from '../../contexts/ThemeProvider'
-import NavBar from '../NavBar'
-import { FaTwitter, FaGithub, FaInstagram } from "react-icons/fa";
+import {useTheme} from '../contexts/ThemeProvider'
 
 function Footer() {
   const theme = useTheme()

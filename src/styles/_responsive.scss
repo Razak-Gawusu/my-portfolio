@@ -8,7 +8,10 @@
     .header{
         .container{
             .mobile__toggleTheme{
-                display: block !important;
+                display: flex !important;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 2rem;
             }
 
             .nav{
@@ -34,8 +37,12 @@
     .header{
         .container{
             .mobile__toggleTheme{
-                display: block !important;
+                display: flex !important;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 2rem;
             }
+
             .nav{
                 display: none;
             }
@@ -63,7 +70,7 @@
             .nav{
                 display: block;
                 &__list{
-                    @include flexdiv(row, flex-start, center, 1.5rem);
+                    @include flexdiv(row, flex-start, center, 2rem);
     
                     li{
                         font-size: 1.75rem;

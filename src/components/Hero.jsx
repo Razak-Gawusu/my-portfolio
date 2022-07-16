@@ -1,5 +1,5 @@
 import React from 'react'
-import {useTheme} from '../../contexts/ThemeProvider'
+import {useTheme} from '../contexts/ThemeProvider'
 
 function Hero() {
     const theme = useTheme();

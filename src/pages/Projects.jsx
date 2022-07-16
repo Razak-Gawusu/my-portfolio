@@ -7,7 +7,7 @@ function Projects() {
     const theme = useTheme()
     
   return (
-    <div className={`projects ${theme ? 'dark' : ''}`}>
+    <div id='projects' className={`projects ${theme ? 'dark' : ''}`}>
         <div className='container'>
             <h3 className='mainTitle'>Latest Works</h3>
             <p className='paragraph'>Perfect solutions for digital experience</p>
