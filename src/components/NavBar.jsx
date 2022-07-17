@@ -1,6 +1,7 @@
 import React from 'react'
 
 function NavBar() { 
+  
   const scrollToHeader = (e) => {
     e.preventDefault()
     const link = e.target.getAttribute('href')

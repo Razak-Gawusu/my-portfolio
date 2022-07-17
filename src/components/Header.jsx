@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import NavBar from './NavBar'
 import { FaTwitter, FaGithub, FaEnvelopeOpen, FaBars, FaTimes, FaMoon, FaSun } from "react-icons/fa";
 import {useTheme, useUpdateTheme} from '../contexts/ThemeProvider'
@@ -7,12 +7,13 @@ function Header() {
   const theme = useTheme()
   const toggleTheme = useUpdateTheme()
 
+  const mobileNav = useRef()
   function openNav() {
-    document.querySelector(".mobile__view--nav").style.width = '50vw';    
+    mobileNav.current.style.width = '250px';    
   }
 
   function closeNav(){
-    document.querySelector(".mobile__view--nav").style.width = '0';
+    mobileNav.current.style.width = '0';
   }
 
   let themeIcon 
@@ -36,7 +37,7 @@ function Header() {
           <div className="socials__item" onClick={() =>toggleTheme()}>{themeIcon}</div>
         </div>
 
-        <nav className='mobile__view--nav'>
+        <nav className='mobile__view--nav' ref={mobileNav}>
           <FaTimes className='icon close' onClick={() => closeNav()}/>
           <ul>
             <li><a className='navLink' href="#home">home</a></li>
