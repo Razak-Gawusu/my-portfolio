@@ -77,6 +77,10 @@
     }
 }
 
+.project--link{
+    text-decoration: none;
+}
+
 @keyframes scaleCard {
     0% {
         transform: scale(1);

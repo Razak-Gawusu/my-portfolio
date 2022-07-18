@@ -5,6 +5,7 @@ import {useTheme} from '../contexts/ThemeProvider'
 
 function Projects() {
     const theme = useTheme()
+    const blank ='_blank'
     
   return (
     <div id='projects' className={`projects ${theme ? 'dark' : ''}`}>
@@ -18,10 +19,12 @@ function Projects() {
                         title={work.title}
                         languages={work.languages}
                         image={work.img}
+                        webAddress={work.webAddress}
+                        codeAddress={work.codeAddress}
                     />
                 ))}
             </div>
-            <a className='link' href="kjfdkjk">all projects</a>
+            <a className='link' href="https://github.com/razak-gawusu" target={blank}>all projects</a>
         </div>
     </div>
   )

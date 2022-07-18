@@ -27,12 +27,9 @@
         margin: 2rem 0;
         padding: 2rem;
         border-radius: .5rem;
+        transition: all .25s ease-in-out;
         &:hover{
-            animation-name: scaleCard;
-            animation-duration: 1s;
-            animation-timing-function: ease-in-out;
-            animation-fill-mode: both;
-            animation-iteration-count: infinite
+            transform: scale(1.025)
         }
 
         &__text{
@@ -62,6 +59,17 @@
             margin-top: 2rem;
             img{
                 max-width: 100%;
+            }
+        }
+
+        .btn{
+            display: inline-block;
+            margin-top: 2rem;
+            margin-bottom: 0;
+            text-decoration: none;
+            background-color: $darkModeBackgroundAlt;
+            &:hover{
+                background-color: $accentColor1;
             }
         }
     }

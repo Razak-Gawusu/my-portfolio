@@ -125,7 +125,6 @@
 
 
     .hero{
-        position: relative;
         text-align: left;
         display: grid;
         place-items: center;
@@ -149,8 +148,6 @@
     }
 
     .aboutMe{
-        display: grid;
-        place-items: center;
         .container{
             @include flexdiv(row-reverse, space-between);
 

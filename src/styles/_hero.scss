@@ -2,6 +2,8 @@
 @import 'variables';
 
 .hero{
+    position: relative;
+    overflow: hidden;
     min-height: 100vh;
     padding: 5rem 0;
     text-align: center;
@@ -10,6 +12,7 @@
     .paragraph{
         padding: 2rem 0;
     }
+
     .hero__image{
         margin: 4rem 0;
     }

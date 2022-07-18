@@ -18,24 +18,32 @@ export const latestWorksData = [
         id:1,
         title:'Loopstudios',
         languages: ['HTML', 'CSS', 'JavaScript'],
-        img:'loopstudios.jpg'
+        img:'loopstudios.jpg',
+        webAddress: 'http://razak-gawusu.github.io/loopstudios',
+        codeAddress: 'http://razak-gawusu/loopstudios'
     },
     {
         id:2,
         title:'Rest Countries',
         languages: ['Sass', 'React'],
-        img:'rest-countries-api.jpg'
+        img:'rest-countries-api.jpg',
+        webAddress: 'http://razak-gawusu.github.io/loopstudios',
+        codeAddress: 'http://razak-gawusu/loopstudios'
     },
     {
         id:3,
         title:'Sneaker',
         languages: ['React', 'Tailwind CSS', 'Redux'],
-        img:'sneaker.jpg'
+        img:'sneaker.jpg',
+        webAddress: 'http://razak-gawusu.github.io/loopstudios',
+        codeAddress: 'http://razak-gawusu/loopstudios'
     },
     {
         id:4,
         title:'Todo App',
         languages: ['Sass', 'React'],
-        img:'todo-app.jpg'
+        img:'todo-app.jpg',
+        webAddress: 'http://razak-gawusu.github.io/loopstudios',
+        codeAddress: 'http://razak-gawusu/loopstudios'
     }
 ]

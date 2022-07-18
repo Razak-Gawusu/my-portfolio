@@ -10,11 +10,13 @@
 
             span{
                 font-weight: weight(bold);
+                color: $accentColor1;
             }
         }
 
         small{
             font-size: 1.25rem;
+            font-family: 'Source Sans Pro', sans-serif;
         }
     }
 }

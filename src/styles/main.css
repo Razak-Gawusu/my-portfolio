@@ -97,6 +97,10 @@ img {
   color: #582ca8;
 }
 
+.project--link {
+  text-decoration: none;
+}
+
 @-webkit-keyframes scaleCard {
   0% {
     transform: scale(1);
@@ -187,6 +191,10 @@ img {
   color: #582ca8;
 }
 
+.project--link {
+  text-decoration: none;
+}
+
 @keyframes scaleCard {
   0% {
     transform: scale(1);
@@ -199,6 +207,8 @@ img {
   }
 }
 .hero {
+  position: relative;
+  overflow: hidden;
   min-height: 100vh;
   padding: 5rem 0;
   text-align: center;
@@ -318,7 +328,6 @@ img {
     display: none;
   }
   .hero {
-    position: relative;
     text-align: left;
     display: grid;
     place-items: center;
@@ -340,10 +349,6 @@ img {
     position: absolute;
     bottom: 0;
     right: -10rem;
-  }
-  .aboutMe {
-    display: grid;
-    place-items: center;
   }
   .aboutMe .container {
     display: flex;
@@ -445,6 +450,10 @@ img {
   color: #582ca8;
 }
 
+.project--link {
+  text-decoration: none;
+}
+
 @keyframes scaleCard {
   0% {
     transform: scale(1);
@@ -457,8 +466,10 @@ img {
   }
 }
 .aboutMe {
-  height: 100vh;
+  min-height: 100vh;
   padding: 5rem 0;
+  display: grid;
+  place-items: center;
 }
 .aboutMe .subTitle {
   padding-bottom: 2rem;
@@ -532,18 +543,10 @@ img {
   margin: 2rem 0;
   padding: 2rem;
   border-radius: 0.5rem;
+  transition: all 0.25s ease-in-out;
 }
 .projects .projects__works--item:hover {
-  -webkit-animation-name: scaleCard;
-          animation-name: scaleCard;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  transform: scale(1.025);
 }
 .projects .projects__works--item__text {
   display: flex;
@@ -572,6 +575,16 @@ img {
 }
 .projects .projects__works--item__image img {
   max-width: 100%;
+}
+.projects .projects__works--item .btn {
+  display: inline-block;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  text-decoration: none;
+  background-color: #1d1e22;
+}
+.projects .projects__works--item .btn:hover {
+  background-color: #582ca8;
 }
 
 .contact {
@@ -602,8 +615,13 @@ img {
   color: #3f3f3f;
 }
 .contact__information .heading:last-child {
-  font-size: 2.25rem;
+  font-size: 2.75rem;
   font-weight: 600;
+  text-decoration: none;
+  color: #1d1e22;
+}
+.contact__information .heading:last-child:hover {
+  color: #582ca8;
 }
 .contact__information .nav {
   padding: 2rem 0;
@@ -614,6 +632,24 @@ img {
 }
 .contact__information .nav__list .nav__item:hover {
   color: #582ca8;
+}
+.contact .socials {
+  padding: 2rem 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.25rem;
+}
+.contact .socials a {
+  display: block;
+  color: #3f3f3f;
+}
+.contact .socials a:hover {
+  color: #582ca8;
+}
+.contact .socials .icon {
+  font-size: 2.5rem;
 }
 
 .nav__list .nav__item {
@@ -637,9 +673,11 @@ img {
 }
 .footer .container .paragraph span {
   font-weight: 600;
+  color: #582ca8;
 }
 .footer .container small {
   font-size: 1.25rem;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .header {
@@ -663,6 +701,27 @@ img {
   font-weight: 600;
   color: #582ca8;
 }
+.header .container .socials__item:hover {
+  color: #582ca8;
+}
+.header .container .socials__item a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #000000;
+}
+.header .container .socials__item a:hover {
+  color: #582ca8;
+  text-decoration: underline;
+}
+.header .container .socials__item:nth-child(3) {
+  background-color: #ffffff;
+}
+.header .container .socials__item:nth-child(3) .icon {
+  color: #000000;
+}
+.header .container .socials__item:nth-child(3) .icon:hover {
+  color: #582ca8;
+}
 .header .container .mobile__toggleTheme {
   display: none;
 }
@@ -682,7 +741,7 @@ img {
   bottom: 0;
   width: 0;
   overflow: hidden;
-  background-color: #1d1d1d;
+  background-color: #1d1e22;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -728,7 +787,7 @@ img {
 .header .container .mobile__view--nav ul:last-child .socials__item:last-child {
   align-self: center;
   padding: 1.75rem;
-  background-color: #141416;
+  background-color: #0f0f14;
   border-radius: 50%;
 }
 .header .container .mobile__view--nav ul:last-child .socials__item:last-child .icon {
@@ -738,7 +797,7 @@ img {
 }
 
 .header.dark {
-  background-color: #1d1d1d;
+  background-color: #1d1e22;
 }
 .header.dark .container .heading {
   color: #ffffff;
@@ -758,12 +817,18 @@ img {
 .header.dark .container .socials__item {
   color: #ffffff;
 }
+.header.dark .container .socials__item a {
+  color: inherit;
+}
+.header.dark .container .socials__item:hover {
+  color: #582ca8;
+}
 .header.dark .container .icon.menu {
   color: #ffffff;
 }
 
 .hero.dark {
-  background-color: #1d1d1d;
+  background-color: #1d1e22;
 }
 .hero.dark .mainTitle {
   color: #ffffff;
@@ -776,7 +841,7 @@ img {
 }
 
 .aboutMe.dark {
-  background-color: #141416;
+  background-color: #0f0f14;
 }
 .aboutMe.dark .subTitle, .aboutMe.dark .paragraph {
   color: #cccccc;
@@ -785,7 +850,7 @@ img {
   color: #ffffff;
 }
 .aboutMe.dark .aboutMe__item:last-child .skills--item {
-  background-color: #1d1d1d;
+  background-color: #1d1e22;
 }
 .aboutMe.dark .aboutMe__item:last-child .skills--item__text .paragraph {
   color: #cccccc;
@@ -795,7 +860,7 @@ img {
 }
 
 .projects.dark {
-  background-color: #141416;
+  background-color: #0f0f14;
 }
 .projects.dark .mainTitle {
   color: #ffffff;
@@ -804,14 +869,22 @@ img {
   color: #cccccc;
 }
 .projects.dark .projects__works--item {
-  background-color: #1d1d1d;
+  background-color: #1d1e22;
 }
 .projects.dark .projects__works--item__text .heading {
   color: #ffffff;
 }
+.projects.dark .projects__works--item .btn {
+  background-color: #eeeeee;
+  color: #000000;
+}
+.projects.dark .projects__works--item .btn:hover {
+  background-color: #582ca8;
+  color: #ffffff;
+}
 
 .contact.dark {
-  background-color: #1d1d1d;
+  background-color: #0f0f14;
 }
 .contact.dark .contact__sayhi .heading {
   color: #ffffff;
@@ -825,15 +898,24 @@ img {
 .contact.dark .contact__information .heading:last-child {
   color: #ffffff;
 }
-.contact.dark .contact__information .nav__list .nav__item {
+.contact.dark .contact__information .heading:last-child:hover {
+  color: #582ca8;
+}
+.contact.dark .contact__information .socials a {
+  color: #cccccc;
+}
+.contact.dark .contact__information .socials a:hover {
+  color: #582ca8;
+}
+.contact.dark .contact__information .nav__list .nav__item .navLink {
   color: #ffffff;
 }
-.contact.dark .contact__information .nav__list .nav__item:hover {
+.contact.dark .contact__information .nav__list .nav__item .navLink:hover {
   color: #582ca8;
 }
 
 .footer.dark {
-  background-color: #141416;
+  background-color: #0f0f14;
 }
 .footer.dark .paragraph {
   color: #ffffff;

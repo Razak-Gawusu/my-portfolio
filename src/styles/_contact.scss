@@ -35,8 +35,13 @@
         }
 
         .heading:last-child{
-            font-size: 2.25rem;
+            font-size: 2.75rem;
             font-weight: weight(bold);
+            text-decoration: none;
+            color: $darkModeBackgroundAlt;
+            &:hover{
+                color: $accentColor1;
+            }
         }
 
         .nav{
@@ -53,5 +58,20 @@
             }
         }
 
+    }
+
+    .socials{
+        padding: 2rem 0 0 0;
+        @include flexdiv(row, flex-start, center, 1.25rem);
+        a{
+            display: block;
+            color: $lightModeTextAlt;
+            &:hover{
+                color: $accentColor1;
+            }
+        }
+        .icon{
+            font-size: 2.5rem;
+        }
     }
 }

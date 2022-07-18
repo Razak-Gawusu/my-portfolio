@@ -4,6 +4,7 @@ import { FaTwitter, FaGithub, FaEnvelopeOpen, FaBars, FaTimes, FaMoon, FaSun } f
 import {useTheme, useUpdateTheme} from '../contexts/ThemeProvider'
 
 function Header() {
+  const blank ='_blank'
   const theme = useTheme()
   const toggleTheme = useUpdateTheme()
 
@@ -31,9 +32,9 @@ function Header() {
         </h1>
         <NavBar />
         <div className='socials'>
-          <div className="socials__item"><FaGithub className='icon'/> Github </div> 
-          <div className="socials__item"><FaTwitter className='icon'/> Twitter </div>
-          <div className="socials__item"><FaEnvelopeOpen className='icon'/></div>
+          <div className="socials__item"><FaGithub className='icon'/> <a href="https://github.com/razak-gawusu" target={blank}>github</a></div> 
+          <div className="socials__item"><FaTwitter className='icon'/> <a href="https://github.com/razak-gawusu" target={blank}>twitter</a> </div>
+          <div className="socials__item"><a href="mailto:gawusur@gmail.com"><FaEnvelopeOpen className='icon'/></a></div>
           <div className="socials__item" onClick={() =>toggleTheme()}>{themeIcon}</div>
         </div>
 
@@ -46,9 +47,9 @@ function Header() {
             <li><a className='navLink' href="#contact">contact</a></li>
           </ul>
           <ul>
-            <li className="socials__item"><FaGithub className='icon'/> Github </li> 
-            <li className="socials__item"><FaTwitter className='icon'/> Twitter </li>
-            <li className="socials__item"><FaEnvelopeOpen className='icon'/></li>
+            <li className="socials__item"><FaGithub className='icon'/> <a className='navLink' href="https://github.com/razak-gawusu">github</a> </li> 
+            <li className="socials__item"><FaTwitter className='icon'/> <a className='navLink' href="https://github.com/razak-gawusu">twitter</a></li>
+            <li className="socials__item"><a href="mailto:gawusur@gmail.com"><FaEnvelopeOpen className='icon'/></a></li>
           </ul>
         </nav>
 

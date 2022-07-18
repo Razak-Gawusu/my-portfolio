@@ -16,6 +16,33 @@
             }
         }
 
+        .socials{
+            &__item{
+                &:hover{
+                    color: $accentColor1;
+                }
+                a{
+                    text-transform: capitalize;
+                    text-decoration: none;
+                    color: $lightModeText;
+                    &:hover{
+                        color: $accentColor1;
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            &__item:nth-child(3){
+                background-color: $lightModeBackground;
+                .icon{
+                    color: $lightModeText;
+                    &:hover{
+                        color: $accentColor1;
+                    }
+                }
+            }
+        }
+
         .mobile__toggleTheme{
             display: none;
 
