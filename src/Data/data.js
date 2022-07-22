@@ -43,7 +43,7 @@ export const latestWorksData = [
         title:'Todo App',
         languages: ['Sass', 'React'],
         img:'todo-app.jpg',
-        webAddress: 'http://razak-gawusu.github.io/loopstudios',
-        codeAddress: 'http://razak-gawusu/loopstudios'
+        webAddress: 'https://gawusu-todoapp.netilfy.app',
+        codeAddress: 'https://github.com/Razak-Gawusu/todo-app'
     }
 ]

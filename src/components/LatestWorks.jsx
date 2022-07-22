@@ -22,7 +22,7 @@ function LatestWorks(props) {
                   alt="projectImage" 
                 />
             </div>
-            <a className='btn' href={props.codeAddress}>View Code</a>
+            <a className='btn' href={props.codeAddress} target={blank}>View Code</a>
         </div>
     </a>
   )
