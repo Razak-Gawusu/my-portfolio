@@ -16,11 +16,11 @@ export const skillData = [
 export const latestWorksData = [
     {
         id:1,
-        title:'Loopstudios',
-        languages: ['HTML', 'CSS', 'JavaScript'],
-        img:'loopstudios.jpg',
-        webAddress: 'http://razak-gawusu.github.io/loopstudios',
-        codeAddress: 'http://razak-gawusu/loopstudios'
+        title:'LooksnStyle',
+        languages: ['React', 'Sass'],
+        img:'looksnstyle.png',
+        webAddress: 'https://looksnstyle.netlify.app',
+        codeAddress: 'https://github.com/Razak-Gawusu/SantaMaria-Barber-Shop'
     },
     {
         id:2,
