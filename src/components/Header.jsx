@@ -18,7 +18,7 @@ function Header() {
   }
 
   let themeIcon 
-  if (theme === true) {
+  if (theme === false) {
     themeIcon = <FaMoon className='icon' />
   } else {
     themeIcon = <FaSun className='icon'/>

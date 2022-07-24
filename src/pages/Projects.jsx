@@ -24,7 +24,7 @@ function Projects() {
                     />
                 ))}
             </div>
-            <a className='link' href="https://github.com/razak-gawusu" target={blank}>all projects</a>
+            <a className='link' href="https://github.com/razak-gawusu" target={blank}>More projects</a>
         </div>
     </div>
   )

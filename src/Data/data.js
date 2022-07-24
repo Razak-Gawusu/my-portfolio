@@ -32,11 +32,11 @@ export const latestWorksData = [
     },
     {
         id:3,
-        title:'Sneaker',
-        languages: ['React', 'Tailwind CSS', 'Redux'],
-        img:'sneaker.jpg',
-        webAddress: 'http://razak-gawusu.github.io/loopstudios',
-        codeAddress: 'http://razak-gawusu/loopstudios'
+        title:'Car Sales GH',
+        languages: ['React', 'Sass'],
+        img:'carsalesgh.png',
+        webAddress: 'https://carsalesgh.netlify.app',
+        codeAddress: 'https://github.com/Razak-Gawusu/ghone-carsales'
     },
     {
         id:4,
