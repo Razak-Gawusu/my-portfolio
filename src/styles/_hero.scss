@@ -10,6 +10,8 @@
     background-color: $lightModeBackgroundAlt;
 
     .paragraph{
+        width: 70%;
+        margin: auto;
         padding: 2rem 0;
     }
 
@@ -18,10 +20,21 @@
     }
 
     .link{
-        font-size: 2rem;
+        font-size: clamp(1.7rem, 2vw, 2rem);
+        color: $darkModeText;
+        text-decoration: none;
+        background-color: $accentColor1;
+        padding: .5em 1.2rem;
+        border-radius: .5rem;
+        transition: all .2s ease-in-out;
+        
+        &:hover{
+            background-color: $lightModeBackground;
+            color: $accentColor1 !important;
+        }
     }
 
-    .btn{
-        font-size: clamp(1.5rem, 2vw, 2rem);
-    }
+    // .btn{
+    //     font-size: clamp(1.5rem, 2vw, 2rem);
+    // }
 }

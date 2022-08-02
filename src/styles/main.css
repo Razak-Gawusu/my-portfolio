@@ -215,16 +215,25 @@ img {
   background-color: #E9EAED;
 }
 .hero .paragraph {
+  width: 70%;
+  margin: auto;
   padding: 2rem 0;
 }
 .hero .hero__image {
   margin: 4rem 0;
 }
 .hero .link {
-  font-size: 2rem;
+  font-size: clamp(1.7rem, 2vw, 2rem);
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #582ca8;
+  padding: 0.5em 1.2rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease-in-out;
 }
-.hero .btn {
-  font-size: clamp(1.5rem, 2vw, 2rem);
+.hero .link:hover {
+  background-color: #ffffff;
+  color: #582ca8 !important;
 }
 
 @media screen and (max-width: 600px) {
@@ -546,7 +555,7 @@ img {
   transition: all 0.25s ease-in-out;
 }
 .projects .projects__works--item:hover {
-  transform: scale(1.025);
+  transform: scale(0.95);
 }
 .projects .projects__works--item__text {
   display: flex;

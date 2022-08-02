@@ -8,14 +8,16 @@ function Hero() {
     <div className={`hero ${theme ? 'dark' : ''}`}>
         <div className='container'>
             <div className='hero__text'>
-                <button className='btn'>Web Developer</button>
+                
                 <h1 className='mainTitle'>
-                    Talk is cheap. Show me the code
+                    Hi. I'm Gawusu
                 </h1>
                 <p className='paragraph'>
-                    I design and code beautiful simple things, and I love what I do.
+                I'm a freelance web developer. I design and code beautiful simple things, and I love what I do.
                 </p>
-                <a className='link' href="mailto:gawusur@gmail.com"> let's chat!</a>
+                
+                <a className='link' href="mailto:gawusur@gmail.com"> Get in Touch</a>
+                
             </div>
 
             <div className='hero__image'>
