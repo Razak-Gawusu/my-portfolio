@@ -31,14 +31,14 @@ img {
 }
 
 .mainTitle {
-  font-size: clamp(4rem, 3vw, 5.5rem);
+  font-size: clamp(3rem, 3vw, 5.5rem);
   font-family: "IBM Plex Mono", monospace;
   font-weight: 500;
   padding: 2rem 0;
 }
 
 .subTitle {
-  font-size: 1.75rem;
+  font-size: clamp(1.4rem, 2vw, 1.75rem);
   color: #000000;
   font-family: "Source Sans Pro", sans-serif;
   line-height: 2.75rem;
@@ -47,14 +47,14 @@ img {
 }
 
 .heading {
-  font-size: 1.5rem;
+  font-size: clamp(1.4rem, 2vw, 1.75rem);
   color: #000000;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
 }
 
 .paragraph {
-  font-size: 1.75rem;
+  font-size: clamp(1.4rem, 2vw, 1.75rem);
   color: #000000;
   padding: 2rem 0;
   font-family: "Source Sans Pro", sans-serif;
@@ -125,14 +125,14 @@ img {
   }
 }
 .mainTitle {
-  font-size: clamp(4rem, 3vw, 5.5rem);
+  font-size: clamp(3rem, 3vw, 5.5rem);
   font-family: "IBM Plex Mono", monospace;
   font-weight: 500;
   padding: 2rem 0;
 }
 
 .subTitle {
-  font-size: 1.75rem;
+  font-size: clamp(1.4rem, 2vw, 1.75rem);
   color: #000000;
   font-family: "Source Sans Pro", sans-serif;
   line-height: 2.75rem;
@@ -141,14 +141,14 @@ img {
 }
 
 .heading {
-  font-size: 1.5rem;
+  font-size: clamp(1.4rem, 2vw, 1.75rem);
   color: #000000;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
 }
 
 .paragraph {
-  font-size: 1.75rem;
+  font-size: clamp(1.4rem, 2vw, 1.75rem);
   color: #000000;
   padding: 2rem 0;
   font-family: "Source Sans Pro", sans-serif;
@@ -212,7 +212,7 @@ img {
   min-height: 100vh;
   padding: 5rem 0;
   text-align: center;
-  background-color: #eeeeee;
+  background-color: #E9EAED;
 }
 .hero .paragraph {
   padding: 2rem 0;
@@ -306,7 +306,7 @@ img {
     font-family: "Source Sans Pro", sans-serif;
   }
   .header .container .socials__item:nth-child(3) {
-    background-color: #eeeeee;
+    background-color: #E9EAED;
     padding: 1rem;
     border-radius: 50%;
   }
@@ -384,14 +384,14 @@ img {
   }
 }
 .mainTitle {
-  font-size: clamp(4rem, 3vw, 5.5rem);
+  font-size: clamp(3rem, 3vw, 5.5rem);
   font-family: "IBM Plex Mono", monospace;
   font-weight: 500;
   padding: 2rem 0;
 }
 
 .subTitle {
-  font-size: 1.75rem;
+  font-size: clamp(1.4rem, 2vw, 1.75rem);
   color: #000000;
   font-family: "Source Sans Pro", sans-serif;
   line-height: 2.75rem;
@@ -400,14 +400,14 @@ img {
 }
 
 .heading {
-  font-size: 1.5rem;
+  font-size: clamp(1.4rem, 2vw, 1.75rem);
   color: #000000;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
 }
 
 .paragraph {
-  font-size: 1.75rem;
+  font-size: clamp(1.4rem, 2vw, 1.75rem);
   color: #000000;
   padding: 2rem 0;
   font-family: "Source Sans Pro", sans-serif;
@@ -489,7 +489,7 @@ img {
   justify-content: space-between;
   align-items: flex-start;
   gap: 0;
-  background-color: #eeeeee;
+  background-color: #E9EAED;
   margin: 2.5rem 0;
   padding: 2.5rem;
   border-radius: 0.5rem;
@@ -539,7 +539,7 @@ img {
   display: grid;
 }
 .projects .projects__works--item {
-  background-color: #eeeeee;
+  background-color: #E9EAED;
   margin: 2rem 0;
   padding: 2rem;
   border-radius: 0.5rem;
@@ -581,25 +581,25 @@ img {
   margin-top: 2rem;
   margin-bottom: 0;
   text-decoration: none;
-  background-color: #1d1e22;
+  background-color: #111111;
 }
 .projects .projects__works--item .btn:hover {
   background-color: #582ca8;
 }
 
 .contact {
-  background-color: #eeeeee;
+  background-color: #E9EAED;
   padding: 5rem 0;
 }
 .contact__sayhi {
   padding-bottom: 2.5rem;
 }
 .contact__sayhi .heading {
-  font-size: 2.75rem;
+  font-size: clamp(2rem, 3vw, 2.75rem);
 }
 .contact__sayhi .heading .link {
   text-transform: lowercase;
-  font-size: 2.75rem;
+  font-size: clamp(2rem, 3vw, 2.75rem);
 }
 .contact__sayhi .heading:last-child {
   margin-top: 2rem;
@@ -615,10 +615,10 @@ img {
   color: #3f3f3f;
 }
 .contact__information .heading:last-child {
-  font-size: 2.75rem;
+  font-size: clamp(2rem, 3vw, 2.75rem);
   font-weight: 600;
   text-decoration: none;
-  color: #1d1e22;
+  color: #111111;
 }
 .contact__information .heading:last-child:hover {
   color: #582ca8;
@@ -628,7 +628,7 @@ img {
 }
 .contact__information .nav__list .nav__item {
   margin-top: 1rem;
-  font-size: 1.75rem;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
 }
 .contact__information .nav__list .nav__item:hover {
   color: #582ca8;
@@ -659,7 +659,7 @@ img {
 }
 
 .footer {
-  background-color: #eeeeee;
+  background-color: #E9EAED;
 }
 .footer .container {
   display: flex;
@@ -681,7 +681,7 @@ img {
 }
 
 .header {
-  background-color: #eeeeee;
+  background-color: #E9EAED;
   position: absolute;
   z-index: 1;
   width: 100%;
@@ -741,7 +741,7 @@ img {
   bottom: 0;
   width: 0;
   overflow: hidden;
-  background-color: #1d1e22;
+  background-color: #111111;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -787,7 +787,7 @@ img {
 .header .container .mobile__view--nav ul:last-child .socials__item:last-child {
   align-self: center;
   padding: 1.75rem;
-  background-color: #0f0f14;
+  background-color: #0c0c0c;
   border-radius: 50%;
 }
 .header .container .mobile__view--nav ul:last-child .socials__item:last-child .icon {
@@ -797,7 +797,7 @@ img {
 }
 
 .header.dark {
-  background-color: #1d1e22;
+  background-color: #111111;
 }
 .header.dark .container .heading {
   color: #ffffff;
@@ -828,7 +828,7 @@ img {
 }
 
 .hero.dark {
-  background-color: #1d1e22;
+  background-color: #111111;
 }
 .hero.dark .mainTitle {
   color: #ffffff;
@@ -841,7 +841,7 @@ img {
 }
 
 .aboutMe.dark {
-  background-color: #0f0f14;
+  background-color: #0c0c0c;
 }
 .aboutMe.dark .subTitle, .aboutMe.dark .paragraph {
   color: #cccccc;
@@ -850,7 +850,7 @@ img {
   color: #ffffff;
 }
 .aboutMe.dark .aboutMe__item:last-child .skills--item {
-  background-color: #1d1e22;
+  background-color: #111111;
 }
 .aboutMe.dark .aboutMe__item:last-child .skills--item__text .paragraph {
   color: #cccccc;
@@ -860,7 +860,7 @@ img {
 }
 
 .projects.dark {
-  background-color: #0f0f14;
+  background-color: #0c0c0c;
 }
 .projects.dark .mainTitle {
   color: #ffffff;
@@ -869,13 +869,13 @@ img {
   color: #cccccc;
 }
 .projects.dark .projects__works--item {
-  background-color: #1d1e22;
+  background-color: #111111;
 }
 .projects.dark .projects__works--item__text .heading {
   color: #ffffff;
 }
 .projects.dark .projects__works--item .btn {
-  background-color: #eeeeee;
+  background-color: #E9EAED;
   color: #000000;
 }
 .projects.dark .projects__works--item .btn:hover {
@@ -884,7 +884,7 @@ img {
 }
 
 .contact.dark {
-  background-color: #0f0f14;
+  background-color: #0c0c0c;
 }
 .contact.dark .contact__sayhi .heading {
   color: #ffffff;
@@ -915,7 +915,7 @@ img {
 }
 
 .footer.dark {
-  background-color: #0f0f14;
+  background-color: #0c0c0c;
 }
 .footer.dark .paragraph {
   color: #ffffff;

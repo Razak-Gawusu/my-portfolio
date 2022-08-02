@@ -1,10 +1,11 @@
 import React from 'react'
 import NavBar from '../components/NavBar'
 import {useTheme} from '../contexts/ThemeProvider'
-import {FaTwitter, FaGithub} from 'react-icons/fa'
+import {FaLinkedin, FaGithub} from 'react-icons/fa'
 
 function Contact() {
   const theme = useTheme()
+  const blank = '_blank'
   return (
     <div id='contact' className={`contact ${theme ? 'dark' : ''}`}>
         <div className="container">
@@ -20,8 +21,8 @@ function Contact() {
                   <a className='heading' href="mailto:gawusur@gmail.com">gawusur@gmail.com</a>
                 </div>
                 <div className='socials'>
-                  <a href="https://github.com/razak-gawusu"><FaGithub className='icon'/> </a>
-                  <a href="https://github.com/razak-gawusu"><FaTwitter className='icon'/></a>
+                  <a href="https://github.com/razak-gawusu" target={blank}><FaGithub className='icon'/> </a>
+                  <a href="https://linkedin.com/in/gawusu-razak-567732174" target={blank}><FaLinkedin className='icon'/></a>
                 </div>
                 <NavBar />
             </div>

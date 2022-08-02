@@ -1,6 +1,6 @@
 import React, {useRef} from 'react'
 import NavBar from './NavBar'
-import { FaTwitter, FaGithub, FaEnvelopeOpen, FaBars, FaTimes, FaMoon, FaSun } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaEnvelopeOpen, FaBars, FaTimes, FaMoon, FaSun } from "react-icons/fa";
 import {useTheme, useUpdateTheme} from '../contexts/ThemeProvider'
 
 function Header() {
@@ -33,7 +33,7 @@ function Header() {
         <NavBar />
         <div className='socials'>
           <div className="socials__item"><FaGithub className='icon'/> <a href="https://github.com/razak-gawusu" target={blank}>github</a></div> 
-          <div className="socials__item"><FaTwitter className='icon'/> <a href="https://github.com/razak-gawusu" target={blank}>twitter</a> </div>
+          <div className="socials__item"><FaLinkedin className='icon'/> <a href="https://linkedin.com/in/gawusu-razak-567732174" target={blank}>linkedin</a> </div>
           <div className="socials__item"><a href="mailto:gawusur@gmail.com"><FaEnvelopeOpen className='icon'/></a></div>
           <div className="socials__item" onClick={() =>toggleTheme()}>{themeIcon}</div>
         </div>
@@ -47,8 +47,8 @@ function Header() {
             <li><a className='navLink' href="#contact">contact</a></li>
           </ul>
           <ul>
-            <li className="socials__item"><FaGithub className='icon'/> <a className='navLink' href="https://github.com/razak-gawusu">github</a> </li> 
-            <li className="socials__item"><FaTwitter className='icon'/> <a className='navLink' href="https://github.com/razak-gawusu">twitter</a></li>
+            <li className="socials__item"><FaGithub className='icon'/> <a className='navLink' href="https://github.com/razak-gawusu" target={blank}>github</a> </li> 
+            <li className="socials__item"><FaLinkedin className='icon'/> <a className='navLink' href="https://github.com/razak-gawusu" target={blank}>linkedin</a></li>
             <li className="socials__item"><a href="mailto:gawusur@gmail.com"><FaEnvelopeOpen className='icon'/></a></li>
           </ul>
         </nav>

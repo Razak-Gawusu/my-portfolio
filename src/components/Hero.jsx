@@ -8,7 +8,7 @@ function Hero() {
     <div className={`hero ${theme ? 'dark' : ''}`}>
         <div className='container'>
             <div className='hero__text'>
-                <button className='btn'>Full-Stack Developer</button>
+                <button className='btn'>Web Developer</button>
                 <h1 className='mainTitle'>
                     Talk is cheap. Show me the code
                 </h1>

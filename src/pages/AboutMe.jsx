@@ -12,7 +12,8 @@ function AboutMe() {
                 <h6 className='paragraph'>Introduce</h6>
                 <h3 className='mainTitle'>Hello! I'm Gawusu Razak</h3>
                 <h4 className='subTitle'>Every great design begin with an even better story</h4>
-                <p className='paragraph' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat corporis earum reprehenderit excepturi molestiae sed sint soluta expedita maxime molestias! Sequi accusamus voluptatem deserunt. Expedita cum, delectus voluptates quis quos quaerat animi pariatur veritatis maiores minima dolore quibusdam sequi asperiores optio dolorum consectetur similique velit aspernatur ab dignissimos deserunt eos.</p>
+                <p className='paragraph' >I've been a junior software engineer with First Technology for just over a year. In the short time I've been there, I've already contributed to over a dozen projects and helped manage one project for a long-standing client of the company.</p>
+                <p className='paragraph' >I had a two-year internship with Mobile First prior to this position, during which I improved my abilities in web application development.</p>
             </div>
             
             <div className='aboutMe__item'>
