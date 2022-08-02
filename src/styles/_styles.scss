@@ -32,7 +32,7 @@
 }
 
 .paragraph{
-    font-size: clamp(1.4rem, 2vw, 1.75rem);
+    font-size: clamp(1.6rem, 2vw, 1.85rem);
     color: $lightModeText;
     padding: 2rem 0;
     font-family: 'Source Sans Pro', sans-serif;
@@ -41,7 +41,7 @@
 }
 
 .link{
-    font-size: 1.75rem;
+    font-size: clamp(1.4rem, 2vw, 1.75rem);
     text-decoration: underline;
     color: $accentColor1;
     text-transform: uppercase;

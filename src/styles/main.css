@@ -54,7 +54,7 @@ img {
 }
 
 .paragraph {
-  font-size: clamp(1.4rem, 2vw, 1.75rem);
+  font-size: clamp(1.6rem, 2vw, 1.85rem);
   color: #000000;
   padding: 2rem 0;
   font-family: "Source Sans Pro", sans-serif;
@@ -63,7 +63,7 @@ img {
 }
 
 .link {
-  font-size: 1.75rem;
+  font-size: clamp(1.4rem, 2vw, 1.75rem);
   text-decoration: underline;
   color: #582ca8;
   text-transform: uppercase;
@@ -148,7 +148,7 @@ img {
 }
 
 .paragraph {
-  font-size: clamp(1.4rem, 2vw, 1.75rem);
+  font-size: clamp(1.6rem, 2vw, 1.85rem);
   color: #000000;
   padding: 2rem 0;
   font-family: "Source Sans Pro", sans-serif;
@@ -157,7 +157,7 @@ img {
 }
 
 .link {
-  font-size: 1.75rem;
+  font-size: clamp(1.4rem, 2vw, 1.75rem);
   text-decoration: underline;
   color: #582ca8;
   text-transform: uppercase;
@@ -214,15 +214,12 @@ img {
   text-align: center;
   background-color: #E9EAED;
 }
-.hero .paragraph {
-  width: 70%;
-  margin: auto;
-  padding: 2rem 0;
-}
 .hero .hero__image {
   margin: 4rem 0;
 }
 .hero .link {
+  margin-top: 2rem;
+  display: inline-block;
   font-size: clamp(1.7rem, 2vw, 2rem);
   color: #ffffff;
   text-decoration: none;
@@ -239,6 +236,10 @@ img {
 @media screen and (max-width: 600px) {
   .hero {
     padding-top: 10rem;
+  }
+  .hero .paragraph {
+    width: 80%;
+    margin: auto;
   }
   .header .container .mobile__toggleTheme {
     display: flex !important;
@@ -416,7 +417,7 @@ img {
 }
 
 .paragraph {
-  font-size: clamp(1.4rem, 2vw, 1.75rem);
+  font-size: clamp(1.6rem, 2vw, 1.85rem);
   color: #000000;
   padding: 2rem 0;
   font-family: "Source Sans Pro", sans-serif;
@@ -425,7 +426,7 @@ img {
 }
 
 .link {
-  font-size: 1.75rem;
+  font-size: clamp(1.4rem, 2vw, 1.75rem);
   text-decoration: underline;
   color: #582ca8;
   text-transform: uppercase;
@@ -542,7 +543,7 @@ img {
   text-align: center;
   display: block;
   padding: 4rem 0;
-  font-size: 2.75rem;
+  font-size: clamp(1.75rem, 2vw, 2.75rem);
 }
 .projects .projects__works {
   display: grid;

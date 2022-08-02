@@ -9,17 +9,13 @@
     text-align: center;
     background-color: $lightModeBackgroundAlt;
 
-    .paragraph{
-        width: 70%;
-        margin: auto;
-        padding: 2rem 0;
-    }
-
     .hero__image{
         margin: 4rem 0;
     }
 
     .link{
+        margin-top: 2rem;
+        display: inline-block;
         font-size: clamp(1.7rem, 2vw, 2rem);
         color: $darkModeText;
         text-decoration: none;
