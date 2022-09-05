@@ -80,6 +80,9 @@
     }
 
     .aboutMe__item:last-child{
+        h1.heading{
+            color: $darkModeTextAlt;
+        }
         .skills--item{
             background-color: $darkModeBackgroundAlt;
 

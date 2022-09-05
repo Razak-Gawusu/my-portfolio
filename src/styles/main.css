@@ -493,6 +493,9 @@ img {
   padding: 5rem 0;
   width: 100%;
 }
+.aboutMe__item:last-child .heading {
+  color: #000000;
+}
 .aboutMe__item:last-child .skills--item {
   display: flex;
   flex-direction: row;
@@ -503,6 +506,9 @@ img {
   margin: 2.5rem 0;
   padding: 2.5rem;
   border-radius: 0.5rem;
+}
+.aboutMe__item:last-child .skills--item__text {
+  width: 45%;
 }
 .aboutMe__item:last-child .skills--item__text .heading {
   color: #582ca8;
@@ -527,6 +533,24 @@ img {
   align-self: flex-start;
   color: #582ca8;
   font-size: 2rem;
+}
+.aboutMe__item:last-child .skills--item .image__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+  width: 50%;
+}
+.aboutMe__item:last-child .skills--item .image__container img {
+  display: block;
+  max-width: 100%;
+  width: 4.5rem;
+  transition: all 0.1s ease-in-out;
+}
+.aboutMe__item:last-child .skills--item .image__container img:hover {
+  transform: scale(1.1);
 }
 
 .projects {
@@ -858,6 +882,9 @@ img {
 }
 .aboutMe.dark .mainTitle {
   color: #ffffff;
+}
+.aboutMe.dark .aboutMe__item:last-child h1.heading {
+  color: #cccccc;
 }
 .aboutMe.dark .aboutMe__item:last-child .skills--item {
   background-color: #111111;

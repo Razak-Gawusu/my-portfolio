@@ -18,6 +18,10 @@
     &__item:last-child{
         padding: 5rem 0;
         width: 100%;
+
+        .heading{
+            color: $lightModeText;
+        }
         .skills--item{
             @include flexdiv(row, space-between);
             background-color: $lightModeBackgroundAlt;
@@ -26,6 +30,7 @@
             border-radius: .5rem;
 
             &__text{
+                width: 45%;
                 .heading{
                     color: $accentColor1;
                     font-size: 2.5rem;
@@ -53,6 +58,22 @@
                 align-self: flex-start;
                 color: $accentColor1;
                 font-size: 2rem;
+            }
+
+            .image__container{
+                @include flexdiv(row, space-between, flex-start, 1rem);
+                flex-wrap: wrap;
+                width: 50%;
+
+                img{
+                    display: block;
+                    max-width: 100%;
+                    width: 4.5rem;
+                    transition: all .1s ease-in-out;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
             }
         }
     }

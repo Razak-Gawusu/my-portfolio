@@ -2,14 +2,14 @@ export const skillData = [
   {
     id: 1,
     name: "Front-End",
-    description: "I develop front-end with coding super smoothly",
-    number: 4,
+    description: "I develop front-end projects with the user in mind.",
+    images: ['html.png', 'css.png', 'js.png', 'react.png', 'sass.png']
   },
   {
     id: 2,
     name: "Back-End",
-    description: "I develop back-end with coding super smoothly",
-    number: 7,
+    description: "I develop back-end that run efficiently.",
+    images: ['nodejs.png', 'php.png', 'MongoDB.png', 'MySQL.png']
   },
 ];
 
