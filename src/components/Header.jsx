@@ -41,7 +41,6 @@ function Header() {
         <nav className='mobile__view--nav' ref={mobileNav}>
           <FaTimes className='icon close' onClick={() => closeNav()}/>
           <ul>
-            <li><a className='navLink' href="#home">home</a></li>
             <li><a className='navLink' href="#aboutMe">about Me</a></li>
             <li><a className='navLink' href="#projects">projects</a></li>
             <li><a className='navLink' href="#contact">contact</a></li>

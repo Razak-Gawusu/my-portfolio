@@ -13,7 +13,7 @@ function Hero() {
                     Hi. I'm Gawusu
                 </h1>
                 <p className='paragraph'>
-                I'm a freelance web developer. I design and code beautiful simple things, and I love what I do.
+                I'm a Software Engineer who is passionate about developing web apps that increase an organization's effectiveness and efficiency.
                 </p>
                 
                 <a className='link' href="mailto:gawusur@gmail.com"> Get in Touch</a>
