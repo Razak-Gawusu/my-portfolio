@@ -47,7 +47,7 @@ function Header() {
           </ul>
           <ul>
             <li className="socials__item"><FaGithub className='icon'/> <a className='navLink' href="https://github.com/razak-gawusu" target={blank}>github</a> </li> 
-            <li className="socials__item"><FaLinkedin className='icon'/> <a className='navLink' href="https://github.com/razak-gawusu" target={blank}>linkedin</a></li>
+            <li className="socials__item"><FaLinkedin className='icon'/> <a className='navLink' href="https://linkedin.com/in/gawusu-razak-567732174" target={blank}>linkedin</a></li>
             <li className="socials__item"><a href="mailto:gawusur@gmail.com"><FaEnvelopeOpen className='icon'/></a></li>
           </ul>
         </nav>
