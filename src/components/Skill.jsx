@@ -15,7 +15,7 @@ function Skill(props) {
       <div className='image__container'>
         {props.images.map((pic, index) => {
           console.log({pic, index})
-          return <img key={index} src={require(`../assets/images/skills/${pic}`)} alt={`php`}/>
+          return <img key={index} src={require(`../assets/images/skills/${pic}`)} alt={`${pic}`}/>
         })}
       </div>
     </div>
